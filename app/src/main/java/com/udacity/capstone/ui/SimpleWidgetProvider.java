@@ -42,7 +42,7 @@ public class SimpleWidgetProvider extends AppWidgetProvider {
             aartiDetailIntent.putExtra(AppConstants.AARTI_TITLE, aartiKathaDetails.getAartiName());
             aartiDetailIntent.putExtra(AppConstants.IMAGE_ID, aartiKathaDetails.getImageID());
 
-            PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, aartiDetailIntent, 0);
+            PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, aartiDetailIntent, PendingIntent.FLAG_UPDATE_CURRENT);
             views.setOnClickPendingIntent(R.id.baselayout, pendingIntent);
 
 
