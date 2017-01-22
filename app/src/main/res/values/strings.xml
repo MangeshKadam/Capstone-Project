@@ -240,4 +240,6 @@
         Running marathon, travelling are my hobbies.
     </string>
 
+    <string name="authority">com.udacity.capstone</string>
+
 </resources>

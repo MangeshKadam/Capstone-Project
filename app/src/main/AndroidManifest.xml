@@ -95,7 +95,7 @@
 
         <provider
             android:name="com.udacity.capstone.utilities.AssetsProvider"
-            android:authorities="com.udacity.capstone"
+            android:authorities="@string/authority"
             android:grantUriPermissions="true"
             android:exported="true" />
 
