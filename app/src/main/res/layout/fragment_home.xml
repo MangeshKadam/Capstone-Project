@@ -1,0 +1,54 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Layout_background"
+    android:fillViewport="true"
+    app:layout_behavior="com.evs.demo.layout.FixedScrollingViewBehavior">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Layout_background">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/banner"
+                android:background="@color/Layout_background"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="175dp">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:background="@drawable/om_bhakti_path"
+                    />
+            </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/padding_recyclerview"
+            android:paddingRight="@dimen/padding_recyclerview"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:clipToPadding="false"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_below="@+id/banner">
+
+        </android.support.v7.widget.RecyclerView>
+
+       <!-- </LinearLayout>-->
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

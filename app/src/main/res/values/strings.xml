@@ -1,0 +1,243 @@
+﻿<resources>
+    <string name="app_name">धार्मिक आरती और व्रत-कथा</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">
+        android.support.design.widget.AppBarLayout$ScrollingViewBehavior
+    </string>
+
+
+
+
+
+
+    <string name="aarti_name">श्रीगुरु चरण् सरोजरज</string>
+
+    <string name="menu_chalisa">पवित्र चालीसा व आरती पाठ</string>
+    <string name="menu_aarti">धार्मिक व्रत-कथा पाठ</string>
+
+    <string-array name="god_names">
+
+
+        <item>श्री गणेश</item>
+        <item>श्री शिव शंकर</item>
+        <item>श्री कृष्णा</item>
+        <item>श्री राम</item>
+        <item>श्री हनुमान</item>
+        <item>श्री विष्णु</item>
+        <item>श्री महालक्ष्मी</item>
+        <item>श्री दुर्गा एवं काली</item>
+        <item>श्री शनिदेव</item>
+        <item>श्री गायत्री एवं सरस्वती</item>
+        <item>श्री सूर्य देव एवं नवग्रह</item>
+    </string-array>
+
+
+    <string-array name="vrat_katha_names">
+
+        <item>एकादशी व्रत कथा</item>
+        <item>साप्ताहिक व्रत कथा </item>
+        <item>विशिष्ट व्रत कथा</item>
+
+
+    </string-array>
+
+    <string-array name="ganesh_aartis">
+        <item>संकटनाशनगणेशस्तोत्रम्</item>
+        <item>श्री गणेश आरती</item>
+        <item>श्री गणेश चालीसा</item>
+        <item>श्री गणेश अथर्वशीर्षम</item>
+        <item>सुखकर्ता  दुखहर्ता  आरती</item>
+    </string-array>
+
+
+    <string-array name="surya_navgrah_aartis">
+        <item>आदित्य ह्रदय स्तोत्रम्</item>
+        <item>चाक्षुषोपनिषदः</item>
+        <item>नवग्रह प्रार्थना</item>
+        <item>सूर्य नमस्कार मंत्र</item>
+        <item>घर में पूजन विधि</item>
+        <item>कर दर्शन मंत्र</item>
+    </string-array>
+
+
+    <string-array name="vishnu_aartis">
+        <item>आरती जय जगदीश हरे</item>
+        <item>श्री सत्यनारायण जी की आरती</item>
+        <item>श्री विष्णु पञ्चर स्तोत्रम्</item>
+        <item>श्री विष्णु भगवान वंदना श्र्लोक</item>
+        <item>विष्णु सहस्त्रनाम स्तोत्रम्</item>
+        <item>विष्णु जी की चालीसा</item>
+        <item>श्री विष्णुसहस्त्रनामावलिः</item>
+    </string-array>
+
+    <string-array name="shankar_aartis">
+        <item>भैरव चालीसा</item>
+        <item>दारिद्र्यदहनशिवस्तोत्रम्</item>
+        <item>महा मृतुन्जय मंत्र</item>
+        <item>शिव पंचाक्षर स्तोत्रम्</item>
+        <item>शिवताण्डवस्तोत्रम्</item>
+        <item>श्री भैरवजी की आरती</item>
+        <item>श्री पार्वती मां की आरती</item>
+        <item>श्री रुद्राष्टकम्</item>
+        <item>श्री शिव चालीसा</item>
+        <item>श्री शिवा आरती</item>
+    </string-array>
+
+    <string-array name="durga_and_kali_aartis">
+        <item>अपराध क्षमा प्रार्थना</item>
+        <item>अर्गला स्तोत्रम्</item>
+        <item>अथ कीलकम्</item>
+        <item>देव्यपराधक्षमापन स्तोत्रम्</item>
+        <item>काली माता की आरती</item>
+        <item>महिषासुरमर्दिनि स्तोत्रम्</item>
+        <item>शीतला माता की आरती</item>
+        <item>श्री दुर्गा चालीसा</item>
+        <item>श्री दुर्गा जी की आरती</item>
+        <item>श्रीवैष्णोंदेवी की आरती</item>
+        <item>श्री वैष्णो माता की आरती</item>
+        <item>विन्ध्येश्वरी आरती</item>
+        <item>विन्ध्येश्वरी चालीसा</item>
+    </string-array>
+
+    <string-array name="gayatri_and_saraswati_aartis">
+        <item>श्री गायत्री चालीसा</item>
+        <item>गायत्री मंत्र</item>
+        <item>गायत्री माता की आरती</item>
+        <item>सरस्वती आराधना</item>
+        <item>श्री सरस्वती चालीसा</item>
+        <item>मां सरस्वती के दिव्य मंत्र</item>
+        <item>आरती श्री सरस्वती जी</item>
+        <item>श्री सरस्वती स्तुति</item>
+    </string-array>
+
+    <string-array name="hanuman_aartis">
+        <item>बजरंग बाण</item>
+        <item>संकट मोचन हनुमानाष्टक</item>
+        <item>हनुमान द्वादश नाम</item>
+        <item>हनुमानजी की आरती</item>
+        <item>श्री हनुमान चालीसा</item>
+        <item>सुन्दर कांड १ से ५</item>
+        <item>सुन्दर कांड ६ से १०</item>
+        <item>सुन्दर कांड ११ से १५</item>
+        <item>सुन्दर कांड १६ से २०</item>
+        <item>सुन्दर कांड २१ से २५</item>
+        <item>सुन्दर कांड २६ से ३०</item>
+        <item>सुन्दर कांड ३१ से ३५</item>
+        <item>सुन्दर कांड ३६ से ४०</item>
+        <item>सुन्दर कांड ४१ से ४५</item>
+        <item>सुन्दर कांड ४६ से ५०</item>
+        <item>सुन्दर कांड ५१ से ५५</item>
+        <item>सुन्दर कांड ५६ से ६०</item>
+    </string-array>
+
+
+    <string-array name="krishna_aartis">
+        <item>श्री कुंजबिहारी जी की आरती</item>
+        <item>श्री कृष्ण चालीसा</item>
+        <item>श्रीकृष्णसहस्त्रनामावलिः</item>
+        <item>श्री राधाजी की आरती</item>
+        <item>श्री युगल किशोरजी की आरती</item>
+    </string-array>
+
+
+    <string-array name="lakshmi_aartis">
+        <item>अन्नपूर्णा माता की आरती</item>
+        <item>अष्ठ लक्ष्मी स्तोत्रम्</item>
+        <item>श्री कनकधारा स्तोत्रम्</item>
+        <item>श्री लक्ष्मी चालीसा</item>
+        <item>श्री महा लक्ष्मी मंत्र</item>
+        <item>श्री लक्ष्मी जी की आरती</item>
+        <item>श्री सन्तोषी माता चालीसा</item>
+        <item>संतोषी माता जी की आरती</item>
+        <item>वैभव प्रदाता श्री सूक्त</item>
+    </string-array>
+
+    <string-array name="ram_aartis">
+        <item>श्री राम चालीसा</item>
+        <item>श्रीरामचंद्र कृपालु भज</item>
+        <item>श्री रामाष्टकम्</item>
+        <item>आरति श्री रामायण जी की</item>
+        <item>श्री रामचन्द्र स्तुति</item>
+    </string-array>
+
+    <string-array name="shani_aartis">
+        <!--<item>श्रीशनि स्तोत्रम्</item>-->
+        <item>दशरथजीकृत श्रीशनिस्तोत्रम् </item>
+        <item>शनिवार के व्रत की कथा</item>
+        <item>शनि आराधना मंत्र</item>
+        <item>श्री शनिदेव चालीसा</item>
+    </string-array>
+
+    <string-array name="ekadashi_vratkatha">
+        <item>आमलकी एकादशी व्रत कथा</item>
+        <item>अजा (जया) एकादशी व्रत कथा</item>
+        <item>अपरा एकादशी व्रत कथा</item>
+        <item>देव प्रबोधिनी एकादशी व्रतकथा</item>
+        <item>देवशयनी एकादशी व्रत कथा</item>
+        <item>देवउठनी एकादशी व्रत कथा</item>
+        <item>इंदिरा एकादशी व्रत कथा</item>
+        <item>कामदा एकादशी व्रत कथा</item>
+        <item>कामिका एकादशी व्रत कथा</item>
+        <item>कमला (पद्मिनी) एकादशी व्रत कथा</item>
+        <item>मोहिनी एकादशी व्रत कथा</item>
+        <item>मोक्षदा एकादशी व्रत कथा</item>
+        <item>निर्जला एकादशी व्रत कथा</item>
+        <item>परिवर्तिनी एकादशी व्रत कथा</item>
+        <item>पापांकुशा एकादशी व्रत कथा</item>
+        <item>पुरुषोत्तमी (परमा) एकादशी व्रत कथा</item>
+        <item>पुत्रदा एकादशी व्रत कथा</item>
+        <item>रमा एकादशी व्रत कथा</item>
+        <item>सफला एकादशी व्रत कथा</item>
+        <item>षटतिला एकादशी व्रत कथा</item>
+        <item>उत्पन्ना एकादशी व्रत कथा</item>
+        <item>वरूथिनी एकादशी व्रत कथा</item>
+        <item>विजया एकादशी व्रत कथा</item>
+        <item>योगिनी एकादशी व्रत कथा</item>
+    </string-array>
+
+    <string-array name="saptahik_vratkatha">
+        <item>सोमवार व्रत कथा</item>
+        <item>मंगलवार व्रत कथा</item>
+        <item>बुधवार व्रत कथा</item>
+        <item>गुरुवार व्रत की कथा</item>
+        <item>शुक्रवार व्रत कथा</item>
+        <item>शनिवार व्रत कथा</item>
+        <item>रविवार व्रत कथा</item>
+    </string-array>
+
+    <string-array name="vishista_vratkatha">
+        <item>भाई दूज कथा</item>
+        <item>हरतालिका तीज व्रत कथा</item>
+        <item>करवा चौथ व्रत कथा</item>
+        <item>नृसिंह जयंती की व्रत कथा</item>
+        <item>प्रदोष व्रत कथा</item>
+        <item>सत्यनारायण व्रत कथा</item>
+    </string-array>
+
+    <!-- dummy ad mob id https://firebase.google.com/docs/admob/android/interstitial -->
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="kamala_padmini_replace"><item>कमला (पद्मिनी) एकादशी व्रत कथा</item></string>
+    <string name="aja_replace">अजा (जया) एकादशी व्रत कथा</string>
+    <string name="jay_jagdish_replace">आरती : जय जगदीश हरे</string>
+    <string name="purushttam_replace">पुरुषोत्तमी (परमा) एकादशी व्रत कथा</string>
+
+    <string name="app_update_message">Your app is out of date, please download the new version to continue use.</string>
+
+    <string name="update_txt">Update</string>
+
+    <string name="aaj_ki_vishesh">आज की विशेष आरती / कथा</string>
+
+    <string name="placeholder_vishesh">श्री गणेश</string>
+
+    <string name="contact_us">Mail us : mangeshkadam21@gmail.com\n\nMobile : +918692862420</string>
+
+     <string name="about_us_details">\n I am Mangesh Kadam. My friend\'s call me maddy. On the internet, I am <b>mangeshkadam21</b> \n\n I have more 6+ years of experience in developing mobile games/apps. Currently working on some cool projects in payment domain.\n\n
+        Running marathon, travelling are my hobbies.
+    </string>
+
+</resources>

@@ -1,0 +1,58 @@
+{
+  "project_info": {
+    "project_number": "319318865855",
+    "firebase_url": "https://devotional-app-f8523.firebaseio.com",
+    "project_id": "devotional-app-f8523",
+    "storage_bucket": "devotional-app-f8523.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319318865855:android:6278ab7ff52af1bf",
+        "android_client_info": {
+          "package_name": "com.udacity.capstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319318865855-j6v7v0s7hemdvkkm3nf779svfl1ilhr2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.udacity.capstone",
+            "certificate_hash": "43617CBAFC9B3C258BFBC63FFFBDE862EFA79F7E"
+          }
+        },
+        {
+          "client_id": "319318865855-2nsani86s4unatp4mdfjviagbbc8gj7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVzWGGUbkb4R_ekUWGpbY_L_5H4zjwtBU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-90535142-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319318865855-2nsani86s4unatp4mdfjviagbbc8gj7j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

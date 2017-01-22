@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_chalisa" />
+    </group>
+
+    <group
+        android:id="@+id/menu_vratkatha"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_vratkatha"
+            android:icon="@drawable/blank"
+            android:title="@string/menu_aarti" />
+    </group>
+
+
+    <group
+        android:id="@+id/menu_favourite"
+        android:checkableBehavior="single"
+        >
+
+        <item
+            android:id="@+id/nav_favourite"
+            android:checkableBehavior="single"
+            android:title="Favourites">
+            <menu>
+                <item
+                    android:id="@+id/nav_fav1"
+                    android:icon="@drawable/blank"
+                    android:title="Favourite 1" />
+                <item
+                    android:id="@+id/nav_fav2"
+                    android:icon="@drawable/blank"
+                    android:title="Favourite 2" />
+                <item
+                    android:id="@+id/nav_fav3"
+                    android:icon="@drawable/blank"
+                    android:title="Favourite 3" />
+
+            </menu>
+        </item>
+    </group>
+
+
+</menu>

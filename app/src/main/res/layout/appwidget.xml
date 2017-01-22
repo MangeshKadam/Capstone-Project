@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/layout_bg"
+              android:orientation="horizontal"
+              android:id="@+id/baselayout"
+              android:padding="@dimen/widget_margin">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.3"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:text="@string/aaj_ki_vishesh"
+            android:textColor="@color/color_orange"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txtaartiname"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/color_orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:padding="8dp"
+            android:textAlignment="center"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
