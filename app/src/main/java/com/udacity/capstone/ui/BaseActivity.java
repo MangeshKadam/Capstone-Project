@@ -1,7 +1,6 @@
 package com.udacity.capstone.ui;
 
 import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -33,7 +32,6 @@ import org.json.JSONObject;
 public class BaseActivity extends AppCompatActivity {
 
 
-    private ProgressDialog mProgressDialog;
 
     private BroadcastReceiver mBroadcastReceiver;
 
@@ -75,7 +73,7 @@ public class BaseActivity extends AppCompatActivity {
             boolean forceUpdate = jsonObject.optBoolean("force-update");
             if (!version.equalsIgnoreCase(serverVersion)) {
                 if (forceUpdate) {
-                    showMessageDialog("App Update", getString(R.string.app_update_message));
+                    showMessageDialog(getString(R.string.app_update_title), getString(R.string.app_update_message));
                 }
             }
         } catch (JSONException e) {

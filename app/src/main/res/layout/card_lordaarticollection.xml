@@ -32,7 +32,6 @@
                 android:layout_alignParentTop="false"
                 android:paddingTop="4dp"
                 android:paddingBottom="4dp"
-                android:text="@string/aarti_name"
                 android:textSize="18sp" />
 
 

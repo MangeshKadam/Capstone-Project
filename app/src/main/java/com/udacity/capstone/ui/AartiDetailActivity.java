@@ -47,11 +47,8 @@ public class AartiDetailActivity extends BaseActivity {
             imageResourceID = getIntent().getExtras().getInt(AppConstants.IMAGE_ID);
             imggod.setBackgroundResource(imageResourceID);
         }
-        if (aartiName != null) {
-            getSupportActionBar().setTitle(Html.fromHtml("<small>" + getAlterNateText(aartiName) + "</small>"));
-        } else {
-            getSupportActionBar().setTitle(Html.fromHtml("<small>" + "Detail Aarti" + "</small>"));
-        }
+        getSupportActionBar().setTitle(Html.fromHtml("<small>" + aartiName + "</small>"));
+
 
         Uri theUri = Uri.parse(AppConstants.AUTHORITY + fileName);
 
@@ -125,25 +122,10 @@ public class AartiDetailActivity extends BaseActivity {
     }
 
 
-    public String getAlterNateText(String text) {
-        switch (text) {
-            case "कमला -पद्मिनी_ एकादशी व्रत कथा":
-                return AartiDetailActivity.this.getString(R.string.kamala_padmini_replace);
-            case "अजा -जया_ एकादशी व्रत कथा":
-                return AartiDetailActivity.this.getString(R.string.aja_replace);
-            case "आरतीM जय जगदीश हरे":
-                return AartiDetailActivity.this.getString(R.string.jay_jagdish_replace);
-            case "पुरुषोत्तमी -परमा_ एकादशी व्रत कथा":
-                return AartiDetailActivity.this.getString(R.string.purushttam_replace);
-            default:
-                return text;
-        }
-    }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if(fileReadAsycTask!=null && fileReadAsycTask.getStatus()== AsyncTask.Status.RUNNING) {
+        if (fileReadAsycTask != null && fileReadAsycTask.getStatus() == AsyncTask.Status.RUNNING) {
             fileReadAsycTask.cancel(true);
         }
     }
