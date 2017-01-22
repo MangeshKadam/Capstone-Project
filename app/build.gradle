@@ -11,11 +11,19 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    signingConfigs {
+        release {
+            storeFile file("keystore.jks")
+            storePassword "Mangesh@123"
+            keyAlias "mykey"
+            keyPassword "Mangesh@123"
+        }
+    }
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            proguardFile '/home/mangesh/codebase/aartiapp/EcommerceApp/app/proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 
@@ -27,9 +35,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    // Retrofit 2.0
-    // compile 'com.sefford:circular-progress-drawable:1.31@aar'
-    //  compile 'commons-io:commons-io:2.4'
     compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.android.support:design:25.1.0'
     compile 'com.jakewharton:butterknife:7.0.1'
