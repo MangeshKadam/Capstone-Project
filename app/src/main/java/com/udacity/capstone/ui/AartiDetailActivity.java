@@ -1,8 +1,8 @@
 package com.udacity.capstone.ui;
 
-import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.LoaderManager;
+import android.support.v4.content.Loader;
 import android.text.Html;
 import android.view.MenuItem;
 import android.widget.ImageView;
@@ -13,13 +13,12 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.udacity.capstone.R;
 import com.udacity.capstone.data.AppConstants;
-import com.udacity.capstone.utilities.FileReadAsycTask;
-import com.udacity.capstone.utilities.ReadCompleteCallBack;
+import com.udacity.capstone.utilities.FileReadAsycTaskLoader;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class AartiDetailActivity extends BaseActivity {
+public class AartiDetailActivity extends BaseActivity implements LoaderManager.LoaderCallbacks<String> {
 
 
     @Bind(R.id.imggod)
@@ -33,7 +32,6 @@ public class AartiDetailActivity extends BaseActivity {
 
     private InterstitialAd mInterstitialAd;
 
-    FileReadAsycTask fileReadAsycTask = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,23 +47,15 @@ public class AartiDetailActivity extends BaseActivity {
         }
         getSupportActionBar().setTitle(Html.fromHtml("<small>" + aartiName + "</small>"));
 
-
-        Uri theUri = Uri.parse(AppConstants.AUTHORITY + fileName);
-
-        fileReadAsycTask = new FileReadAsycTask(AartiDetailActivity.this, new ReadCompleteCallBack() {
-            @Override
-            public void onFileReadCompleted(String fileData) {
-                aartiText = fileData;
-                txtaarti.setText(Html.fromHtml(aartiText.replace("\r\n", "<br />").replace(".", "")));
-            }
-        });
-        fileReadAsycTask.execute(theUri);
-
-
         mInterstitialAd = newInterstitialAd();
         loadInterstitial();
 
         sendScreenName("DETAIL SCREEN ACTIVITY");
+
+        Bundle bundle = new Bundle();
+        bundle.putString(FileReadAsycTaskLoader.FILE_NAME, fileName);
+        Loader loader = this.getSupportLoaderManager().initLoader(0, bundle, this);
+        loader.forceLoad();
     }
 
     private InterstitialAd newInterstitialAd() {
@@ -125,8 +115,24 @@ public class AartiDetailActivity extends BaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (fileReadAsycTask != null && fileReadAsycTask.getStatus() == AsyncTask.Status.RUNNING) {
-            fileReadAsycTask.cancel(true);
-        }
     }
+
+    @Override
+    public Loader onCreateLoader(int id, Bundle args) {
+        return new FileReadAsycTaskLoader(AartiDetailActivity.this.getBaseContext(), args);
+    }
+
+    @Override
+    public void onLoadFinished(Loader<String> loader, String data) {
+        aartiText = data;
+        txtaarti.setText(Html.fromHtml(aartiText.replace("\r\n", "<br />").replace(".", "")));
+    }
+
+
+    @Override
+    public void onLoaderReset(Loader loader) {
+
+    }
+
+
 }

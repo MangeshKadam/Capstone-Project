@@ -32,5 +32,4 @@ public class AppConstants {
 
     public static final String GOD_TITLE = "GOD_TITLE";
 
-    public static final String AUTHORITY = "content://com.udacity.capstone/";
 }

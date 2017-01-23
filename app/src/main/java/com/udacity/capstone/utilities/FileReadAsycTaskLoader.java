@@ -2,7 +2,8 @@ package com.udacity.capstone.utilities;
 
 import android.content.Context;
 import android.net.Uri;
-import android.os.AsyncTask;
+import android.os.Bundle;
+import android.support.v4.content.AsyncTaskLoader;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -14,25 +15,36 @@ import java.io.InputStreamReader;
  * Created by mangesh on 19/1/17.
  */
 
-public class FileReadAsycTask extends AsyncTask<Uri, Void, String> {
+public class FileReadAsycTaskLoader extends AsyncTaskLoader<String> {
 
-    ReadCompleteCallBack mReadCompleteCallBack;
-    Context mContext;
+    public static final String FILE_NAME = "FILE_NAME";
 
-    public FileReadAsycTask(Context context, ReadCompleteCallBack readCompleteCallBack) {
-        this.mContext = context;
-        this.mReadCompleteCallBack = readCompleteCallBack;
+    private final String AUTHORITY = "content://com.udacity.capstone/";
+
+    Uri mUri;
+
+    Context mContext = null;
+
+    public FileReadAsycTaskLoader(Context context) {
+        super(context);
     }
 
+    public FileReadAsycTaskLoader(Context context, Bundle args) {
+        super(context);
+        mContext = context;
+        String fileName = args.getString(FILE_NAME);
+        mUri = Uri.parse(AUTHORITY +fileName);
+    }
 
     @Override
-    protected String doInBackground(Uri... uris) {
+    public String loadInBackground() {
+
 
         StringBuilder result = new StringBuilder();
         try {
             InputStream is = null;
             try {
-                is = mContext.getContentResolver().openInputStream(uris[0]);
+                is = mContext.getContentResolver().openInputStream(mUri);
                 BufferedReader r = new BufferedReader(new InputStreamReader(is));
                 String line;
                 while ((line = r.readLine()) != null) {
@@ -53,10 +65,5 @@ public class FileReadAsycTask extends AsyncTask<Uri, Void, String> {
         }
 
         return result.toString();
-    }
-
-    @Override
-    protected void onPostExecute(String fileContents) {
-        mReadCompleteCallBack.onFileReadCompleted(fileContents);
     }
 }
