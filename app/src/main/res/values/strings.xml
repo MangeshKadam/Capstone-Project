@@ -243,4 +243,8 @@
 
     <string name="authority">com.udacity.capstone</string>
 
+    <string name="added_to_favourite_message">Added to favourite.</string>
+
+    <string name="no_favourite_available_msg">No favourite slot available.</string>
+
 </resources>

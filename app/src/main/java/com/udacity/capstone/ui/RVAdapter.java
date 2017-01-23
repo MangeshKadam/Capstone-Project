@@ -79,7 +79,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.AartiCollectionVie
                 public void onClick(View v) {
                     prefManager.cacheStoredNames();
                     if(prefManager.isFreeSlotAvailable()) {
-                        Toast.makeText(context, "Added to Favourite.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, context.getString(R.string.added_to_favourite_message), Toast.LENGTH_SHORT).show();
                         like.setImageResource(R.drawable.ic_favorite_selected);
 
                         if (onItemClickListener != null) {
@@ -92,7 +92,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.AartiCollectionVie
                         }
                     }
                     else {
-                        Toast.makeText(context, "No Favourite Slot Available.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, context.getString(R.string.no_favourite_available_msg), Toast.LENGTH_SHORT).show();
                     }
                 }
             });
